@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o Injúria.">
+  <title>Injúria — Contato</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main>
+    <div class="page-header">
+      <p class="t-label" data-i18n="contact.label">Fale com a gente</p>
+      <h1 class="t-title" data-i18n="contact.title">Contato</h1>
+    </div>
+
+    <section class="section contact-grid">
+      <form class="contact-form"
+            name="contato"
+            method="POST"
+            action="/"
+            netlify
+            data-netlify="true">
+        <input type="hidden" name="form-name" value="contato">
+
+        <div class="form-field">
+          <label class="form-label" for="name" data-i18n="contact.name">Nome</label>
+          <input class="form-input" type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="email" data-i18n="contact.email">E-mail</label>
+          <input class="form-input" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="message" data-i18n="contact.message">Mensagem</label>
+          <textarea class="form-textarea" id="message" name="message" required></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" data-i18n="contact.submit">Enviar</button>
+      </form>
+
+      <div>
+        <p class="t-label" style="margin-bottom:20px;" data-i18n="contact.socials">Redes sociais</p>
+        <div class="socials-column">
+          <a href="https://instagram.com/injuriametal" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/injuriametal" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://youtube.com/@injuriametal" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://open.spotify.com/artist/SPOTIFY_ARTIST_ID" target="_blank" rel="noopener">Spotify</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
