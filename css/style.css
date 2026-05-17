@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables ── */
+:root {
+  --text:    #D9D6D0;
+  --bg:      #080808;
+  --surface: #111111;
+  --border:  #1E1E1E;
+  --muted:   #555555;
+  --label:   #444444;
+  --font:    'Inter', system-ui, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: var(--font); }
+
+/* ── Typography ── */
+.t-heading { font-size: clamp(40px, 7vw, 64px); font-weight: 700; letter-spacing: -2px; line-height: 1; }
+.t-title   { font-size: clamp(22px, 4vw, 36px); font-weight: 600; letter-spacing: -0.5px; }
+.t-label   { font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--label); }
+.t-muted   { color: var(--muted); }
+
+/* ── Layout ── */
+.section    { padding: 56px 40px; border-top: 1px solid var(--border); }
+.section-sm { padding: 28px 40px; border-top: 1px solid var(--border); }
+main { padding-top: 56px; }
+
+/* ── Buttons ── */
+.btn { display: inline-block; padding: 11px 28px; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; border: none; transition: opacity 0.15s; }
+.btn:hover { opacity: 0.75; }
+.btn-primary { background: var(--text); color: var(--bg); }
+.btn-outline  { background: transparent; color: var(--text); border: 1px solid var(--text); }
+.btn-ghost    { background: transparent; color: var(--muted); border: 1px solid #252525; }
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── Nav ── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: 56px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+  background: rgba(8,8,8,0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+.nav-logo { font-size: 13px; font-weight: 700; letter-spacing: 5px; text-transform: uppercase; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); transition: color 0.15s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-right { display: flex; align-items: center; gap: 24px; }
+.lang-toggle {
+  background: none; border: 1px solid var(--border);
+  color: var(--muted); font-size: 9px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase; padding: 4px 10px;
+  transition: all 0.15s;
+}
+.lang-toggle:hover { border-color: var(--muted); color: var(--text); }
+.nav-store { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+
+/* ── Footer ── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: #050505;
+}
+.footer-socials { display: flex; gap: 24px; }
+.footer-socials a { font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--label); transition: color 0.15s; }
+.footer-socials a:hover { color: var(--text); }
+
+/* ── Hero ── */
+.hero { position: relative; height: 100vh; min-height: 520px; overflow: hidden; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,8,8,0.92) 0%, rgba(8,8,8,0.1) 55%, transparent 100%); }
+.hero-content { position: absolute; bottom: 40px; left: 40px; right: 40px; display: flex; align-items: flex-end; justify-content: space-between; }
+
+/* ── Release ── */
+.release { display: flex; gap: 32px; align-items: flex-start; margin-top: 20px; }
+.release-cover { width: 100px; height: 100px; flex-shrink: 0; object-fit: cover; background: var(--surface); }
+.release-title { font-size: clamp(22px, 4vw, 32px); font-weight: 600; letter-spacing: -0.8px; margin: 6px 0 10px; }
+.release-desc { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+
+/* ── Video grid ── */
+.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+.video-cell { background: var(--bg); cursor: pointer; }
+.video-thumb-wrap { position: relative; aspect-ratio: 16/9; overflow: hidden; background: var(--surface); }
+.video-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.2s; }
+.video-cell:hover .video-thumb-wrap img { opacity: 0.7; }
+.video-play-icon {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 24px; color: var(--text); pointer-events: none;
+  opacity: 0; transition: opacity 0.2s;
+}
+.video-cell:hover .video-play-icon { opacity: 1; }
+.video-cell iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
+.video-meta { padding: 16px 20px; }
+.video-meta p { font-size: 13px; font-weight: 500; margin-top: 4px; }
+
+/* ── Merch strip ── */
+.merch-strip { display: flex; align-items: center; justify-content: space-between; }
+.merch-title { font-size: 17px; font-weight: 500; margin-top: 6px; }
+
+/* ── Shows ── */
+.shows-contact { display: flex; gap: 20px; margin-top: 12px; flex-wrap: wrap; }
+.shows-contact a { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.15s; }
+.shows-contact a:hover { border-color: var(--text); }
+
+/* ── Streaming bar ── */
+.streaming-bar { display: flex; align-items: center; gap: 32px; background: #050505; padding: 14px 40px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.streaming-bar a { font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--label); transition: color 0.15s; }
+.streaming-bar a:hover { color: var(--text); }
+
+/* ── Page header ── */
+.page-header { padding: 60px 40px 40px; }
+.page-header .t-title { margin-top: 8px; }
+
+/* ── Members ── */
+.members-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
+.member-cell { background: var(--bg); }
+.member-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; background: var(--surface); }
+.member-info { padding: 16px 20px; }
+.member-name { font-size: 16px; font-weight: 600; letter-spacing: -0.3px; margin-bottom: 4px; }
+
+/* ── Timeline ── */
+.timeline { display: flex; flex-direction: column; }
+.timeline-item { display: flex; gap: 32px; padding: 20px 0; border-top: 1px solid var(--border); }
+.timeline-year { font-size: 11px; font-weight: 600; letter-spacing: 2px; flex-shrink: 0; width: 52px; color: var(--label); padding-top: 2px; }
+.timeline-text { font-size: 14px; color: var(--muted); }
+
+/* ── Discography ── */
+.disco-list { display: flex; flex-direction: column; }
+.disco-item { display: flex; gap: 24px; align-items: center; padding: 20px 40px; border-top: 1px solid var(--border); transition: background 0.15s; }
+.disco-item:hover { background: var(--surface); }
+.disco-cover { width: 64px; height: 64px; flex-shrink: 0; object-fit: cover; background: var(--surface); }
+.disco-info { flex: 1; }
+.disco-title { font-size: 17px; font-weight: 600; letter-spacing: -0.3px; }
+.disco-meta { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--label); margin-top: 4px; }
+.disco-links { display: flex; gap: 10px; flex-shrink: 0; }
+
+/* ── Press / Imprensa ── */
+.bio-block { max-width: 680px; }
+.bio-text { font-size: 15px; line-height: 1.85; color: var(--muted); white-space: pre-line; }
+.downloads-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1px; background: var(--border); }
+.download-card { background: var(--surface); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px; }
+.download-card p { font-size: 13px; font-weight: 500; }
+.booking-contacts { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 12px; }
+.booking-contacts a { font-size: 13px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: border-color 0.15s; }
+.booking-contacts a:hover { border-color: var(--text); }
+
+/* ── Contact form ── */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--label); }
+.form-input, .form-textarea {
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text); font-family: var(--font); font-size: 14px;
+  font-weight: 300; padding: 12px 16px; width: 100%; outline: none;
+  transition: border-color 0.15s;
+}
+.form-input:focus, .form-textarea:focus { border-color: var(--muted); }
+.form-textarea { resize: vertical; min-height: 140px; }
+.socials-column { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
+.socials-column a { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); transition: color 0.15s; }
+.socials-column a:hover { color: var(--text); }
