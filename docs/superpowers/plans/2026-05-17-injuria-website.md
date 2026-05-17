@@ -62,7 +62,7 @@ mkdir -p css js assets/images assets/downloads
     "nav.press":       "Imprensa",
     "nav.contact":     "Contato",
     "nav.store":       "Loja ↗",
-    "footer.copy":     "© 2025 Injúria"
+    "footer.copy":     "© 2026 Injúria"
   },
   "en": {
     "nav.home":        "Home",
@@ -71,7 +71,7 @@ mkdir -p css js assets/images assets/downloads
     "nav.press":       "Press",
     "nav.contact":     "Contact",
     "nav.store":       "Store ↗",
-    "footer.copy":     "© 2025 Injúria"
+    "footer.copy":     "© 2026 Injúria"
   }
 }
 ```
@@ -334,10 +334,10 @@ git commit -m "feat: CSS design system — variables, typography, buttons and al
   ];
 
   const SOCIALS = [
-    { label: 'Instagram', href: 'https://instagram.com/injuriametal'                  },
-    { label: 'Facebook',  href: 'https://facebook.com/injuriametal'                   },
-    { label: 'YouTube',   href: 'https://youtube.com/@injuriametal'                   },
-    { label: 'Spotify',   href: 'https://open.spotify.com/artist/SPOTIFY_ARTIST_ID'  },
+    { label: 'Instagram', href: 'https://instagram.com/injuriaofficial'                  },
+    { label: 'Facebook',  href: 'https://facebook.com/injuriaofficial'                   },
+    { label: 'YouTube',   href: 'https://youtube.com/@injuriaofc'                   },
+    { label: 'Spotify',   href: 'https://open.spotify.com/artist/6p0bP6LfWhWiQvW5s7W14O'  },
   ];
 
   function activePath() {
@@ -369,7 +369,7 @@ git commit -m "feat: CSS design system — variables, typography, buttons and al
       `<a href="${s.href}" target="_blank" rel="noopener">${s.label}</a>`
     ).join('');
     return `<footer class="footer">
-  <span class="t-label" data-i18n="footer.copy">© 2025 Injúria</span>
+  <span class="t-label" data-i18n="footer.copy">© 2026 Injúria</span>
   <div class="footer-socials">${socialsHTML}</div>
 </footer>`;
   }
@@ -512,9 +512,9 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
 - Modify: `assets/translations.json`
 
 > Substitua os placeholders de ID antes de publicar:
-> - `SPOTIFY_ARTIST_ID`: ID do artista no Spotify (na URL do perfil após `/artist/`)
-> - `SPOTIFY_ALBUM_TMS_ID`: ID do álbum The Moral Stain no Spotify
-> - `LIVE_SESSION_YT_ID`, `CONTEMPT_YT_ID`, `ASOKA_YT_ID`: IDs dos vídeos no YouTube (11 caracteres após `v=` na URL)
+> - `6p0bP6LfWhWiQvW5s7W14O`: ID do artista no Spotify (na URL do perfil após `/artist/`)
+> - `7xzG1VkanSUMJDL5G7sl78`: ID do álbum The Moral Stain no Spotify
+> - `OPn_NxQ34-Q`, `nshjpaS_bSw`, `2BATPHrT7bQ`: IDs dos vídeos no YouTube (11 caracteres após `v=` na URL)
 
 - [ ] **Step 1: Escrever index.html**
 
@@ -540,7 +540,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
         <h1 class="t-heading">INJÚRIA</h1>
       </div>
       <a class="btn btn-primary"
-         href="https://open.spotify.com/artist/SPOTIFY_ARTIST_ID"
+         href="https://open.spotify.com/artist/6p0bP6LfWhWiQvW5s7W14O"
          target="_blank" rel="noopener"
          data-i18n="home.hero.cta">Ouvir agora</a>
     </div>
@@ -556,11 +556,11 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
         <p class="release-desc" data-i18n="home.release.desc">Segundo álbum do Injúria. Dez faixas sobre o vazio existencial.</p>
         <div class="btn-row">
           <a class="btn btn-primary"
-             href="https://open.spotify.com/album/SPOTIFY_ALBUM_TMS_ID"
+             href="https://open.spotify.com/album/7xzG1VkanSUMJDL5G7sl78"
              target="_blank" rel="noopener"
              data-i18n="home.release.spotify">Spotify</a>
           <a class="btn btn-ghost"
-             href="https://www.youtube.com/playlist?list=YOUTUBE_TMS_PLAYLIST"
+             href="https://www.youtube.com/playlist?list=OLAK5uy_k0IyuEHRWnUzbN8qVCVYbFkHZyaKqDQwQ"
              target="_blank" rel="noopener"
              data-i18n="home.release.youtube">YouTube</a>
         </div>
@@ -574,9 +574,9 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
     </div>
     <div class="video-grid">
 
-      <div class="video-cell" data-video-id="LIVE_SESSION_YT_ID">
+      <div class="video-cell" data-video-id="OPn_NxQ34-Q">
         <div class="video-thumb-wrap">
-          <img src="https://img.youtube.com/vi/LIVE_SESSION_YT_ID/maxresdefault.jpg" alt="Live Session 2025" loading="lazy">
+          <img src="https://img.youtube.com/vi/OPn_NxQ34-Q/maxresdefault.jpg" alt="Live Session 2025" loading="lazy">
           <span class="video-play-icon">▶</span>
         </div>
         <div class="video-meta">
@@ -585,9 +585,9 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
         </div>
       </div>
 
-      <div class="video-cell" data-video-id="CONTEMPT_YT_ID">
+      <div class="video-cell" data-video-id="nshjpaS_bSw">
         <div class="video-thumb-wrap">
-          <img src="https://img.youtube.com/vi/CONTEMPT_YT_ID/maxresdefault.jpg" alt="Contempt" loading="lazy">
+          <img src="https://img.youtube.com/vi/nshjpaS_bSw/maxresdefault.jpg" alt="Contempt" loading="lazy">
           <span class="video-play-icon">▶</span>
         </div>
         <div class="video-meta">
@@ -596,9 +596,9 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
         </div>
       </div>
 
-      <div class="video-cell" data-video-id="ASOKA_YT_ID">
+      <div class="video-cell" data-video-id="2BATPHrT7bQ">
         <div class="video-thumb-wrap">
-          <img src="https://img.youtube.com/vi/ASOKA_YT_ID/maxresdefault.jpg" alt="Asoka" loading="lazy">
+          <img src="https://img.youtube.com/vi/2BATPHrT7bQ/maxresdefault.jpg" alt="Asoka" loading="lazy">
           <span class="video-play-icon">▶</span>
         </div>
         <div class="video-meta">
@@ -613,7 +613,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
   <section class="section-sm merch-strip">
     <div>
       <p class="t-label" data-i18n="home.merch.label">Merch</p>
-      <p class="merch-title" data-i18n="home.merch.items">Camisetas · Moletom · Bermuda</p>
+      <p class="merch-title" data-i18n="home.merch.items">Camisetas · Moletom · Bermuda e mais</p>
     </div>
     <a class="btn btn-outline"
        href="https://loja.injuriametal.com"
@@ -632,7 +632,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
 
   <div class="streaming-bar">
     <p class="t-label" data-i18n="home.streaming.label">Ouça em</p>
-    <a href="https://open.spotify.com/artist/SPOTIFY_ARTIST_ID" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://open.spotify.com/artist/6p0bP6LfWhWiQvW5s7W14O" target="_blank" rel="noopener">Spotify</a>
     <a href="https://music.youtube.com" target="_blank" rel="noopener">YouTube Music</a>
     <a href="https://music.apple.com" target="_blank" rel="noopener">Apple Music</a>
     <a href="https://www.deezer.com" target="_blank" rel="noopener">Deezer</a>
@@ -661,7 +661,7 @@ Mesclar no `assets/translations.json` sob `"pt"` e `"en"`:
   "home.videos.live.title":"3 músicas ao vivo",
   "home.videos.mv.label":  "Videoclipe",
   "home.merch.label":      "Merch",
-  "home.merch.items":      "Camisetas · Moletom · Bermuda",
+  "home.merch.items":      "Camisetas · Moletom · Bermuda e mais",
   "home.merch.cta":        "Ver loja ↗",
   "home.shows.label":      "Shows",
   "home.shows.empty":      "Agenda em breve — entre em contato para booking",
@@ -680,7 +680,7 @@ Mesclar no `assets/translations.json` sob `"pt"` e `"en"`:
   "home.videos.live.title":"3 live songs",
   "home.videos.mv.label":  "Music video",
   "home.merch.label":      "Merch",
-  "home.merch.items":      "T-shirts · Hoodie · Shorts",
+  "home.merch.items":      "T-shirts · Hoodie · Shorts and more",
   "home.merch.cta":        "Visit store ↗",
   "home.shows.label":      "Shows",
   "home.shows.empty":      "Dates coming soon — contact us for booking",
@@ -887,8 +887,8 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
           <p class="disco-meta" data-i18n="disco.tms.meta">2025 · Álbum · 10 faixas</p>
         </div>
         <div class="disco-links">
-          <a class="btn btn-primary" href="https://open.spotify.com/album/SPOTIFY_TMS_ID" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=YOUTUBE_TMS_PLAYLIST" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-primary" href="https://open.spotify.com/album/7xzG1VkanSUMJDL5G7sl78" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=OLAK5uy_k0IyuEHRWnUzbN8qVCVYbFkHZyaKqDQwQ" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
 
@@ -899,8 +899,8 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
           <p class="disco-meta" data-i18n="disco.single.2022">2022 · Single</p>
         </div>
         <div class="disco-links">
-          <a class="btn btn-primary" href="https://open.spotify.com/track/SPOTIFY_CONTEMPT_ID" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=CONTEMPT_YT_ID" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-primary" href="https://open.spotify.com/track/3TqiWpifK8QWYrI9nhct6K?si=1c7024bbd90749ed" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=nshjpaS_bSw" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
 
@@ -911,8 +911,8 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
           <p class="disco-meta" data-i18n="disco.single.2022">2022 · Single</p>
         </div>
         <div class="disco-links">
-          <a class="btn btn-primary" href="https://open.spotify.com/track/SPOTIFY_ASOKA_ID" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=ASOKA_YT_ID" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-primary" href="https://open.spotify.com/track/2bnsofqHrAuV5uSkhdJKwe?si=b57cd05043b14435" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=2BATPHrT7bQ" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
 
@@ -923,8 +923,8 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
           <p class="disco-meta" data-i18n="disco.single.2020">2020 · Single</p>
         </div>
         <div class="disco-links">
-          <a class="btn btn-primary" href="https://open.spotify.com/track/SPOTIFY_FILTHY_ID" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=FILTHY_YT_ID" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-primary" href="https://open.spotify.com/track/3HkPQA5n6KL4ULTeGt6XP7?si=2a7e7ae950ba486d" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=WFp5o2i1xZg" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
 
@@ -935,8 +935,8 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
           <p class="disco-meta" data-i18n="disco.eot.meta">2018 · Álbum · 7 faixas</p>
         </div>
         <div class="disco-links">
-          <a class="btn btn-primary" href="https://open.spotify.com/album/SPOTIFY_EOT_ID" target="_blank" rel="noopener">Spotify</a>
-          <a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=YOUTUBE_EOT_PLAYLIST" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-primary" href="https://open.spotify.com/album/7nWmk6J2bEy3ld6A22cIgS" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=OLAK5uy_nNRbARNIVJz75O6BWz_sSDSuM2AfzUt9I" target="_blank" rel="noopener">YouTube</a>
         </div>
       </div>
 
@@ -1181,10 +1181,10 @@ git commit -m "feat: imprensa page — bios PT+EN, downloads and booking contact
       <div>
         <p class="t-label" style="margin-bottom:20px;" data-i18n="contact.socials">Redes sociais</p>
         <div class="socials-column">
-          <a href="https://instagram.com/injuriametal" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://facebook.com/injuriametal" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://youtube.com/@injuriametal" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://open.spotify.com/artist/SPOTIFY_ARTIST_ID" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://instagram.com/injuriaofficial" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/injuriaofficial" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://youtube.com/@injuriaofc" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://open.spotify.com/artist/6p0bP6LfWhWiQvW5s7W14O" target="_blank" rel="noopener">Spotify</a>
         </div>
       </div>
     </section>
