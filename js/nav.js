@@ -8,10 +8,10 @@
   ];
 
   const SOCIALS = [
-    { label: 'Instagram', href: 'https://instagram.com/injuriametal'                  },
-    { label: 'Facebook',  href: 'https://facebook.com/injuriametal'                   },
-    { label: 'YouTube',   href: 'https://youtube.com/@injuriametal'                   },
-    { label: 'Spotify',   href: 'https://open.spotify.com/artist/SPOTIFY_ARTIST_ID'  },
+    { label: 'Instagram', href: 'https://instagram.com/injuriaofficial'                  },
+    { label: 'Facebook',  href: 'https://facebook.com/injuriaofficial'                   },
+    { label: 'YouTube',   href: 'https://youtube.com/@injuriaofc'                   },
+    { label: 'Spotify',   href: 'https://open.spotify.com/artist/6p0bP6LfWhWiQvW5s7W14O'  },
   ];
 
   function activePath() {
@@ -34,6 +34,7 @@
   <div class="nav-right">
     <button class="lang-toggle" onclick="window.i18n && window.i18n.toggle()" aria-label="Trocar idioma">PT | EN</button>
     <a class="nav-store" href="https://loja.injuriametal.com" target="_blank" rel="noopener" data-i18n="nav.store">Loja ↗</a>
+    <button class="nav-menu-btn" aria-label="Menu" aria-expanded="false">☰</button>
   </div>
 </nav>`;
   }
@@ -43,7 +44,7 @@
       `<a href="${s.href}" target="_blank" rel="noopener">${s.label}</a>`
     ).join('');
     return `<footer class="footer">
-  <span class="t-label" data-i18n="footer.copy">© 2025 Injúria</span>
+  <span class="t-label" data-i18n="footer.copy">© 2026 Injúria</span>
   <div class="footer-socials">${socialsHTML}</div>
 </footer>`;
   }
@@ -51,5 +52,22 @@
   document.addEventListener('DOMContentLoaded', () => {
     document.body.insertAdjacentHTML('afterbegin', buildNav());
     document.body.insertAdjacentHTML('beforeend', buildFooter());
+
+    const nav = document.querySelector('.nav');
+    const menuBtn = document.querySelector('.nav-menu-btn');
+    if (menuBtn) {
+      menuBtn.addEventListener('click', () => {
+        const open = nav.classList.toggle('nav-open');
+        menuBtn.textContent = open ? '✕' : '☰';
+        menuBtn.setAttribute('aria-expanded', open);
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('nav-open');
+          menuBtn.textContent = '☰';
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
   });
 })();
