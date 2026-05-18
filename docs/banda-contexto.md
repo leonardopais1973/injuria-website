@@ -28,7 +28,7 @@
 | 2018 | End Of Times | Álbum | 7 |
 
 ### The Moral Stain (2025)
-Segundo álbum. Dez faixas sobre o vazio existencial.
+Segundo álbum. Nove faixas sobre o vazio existencial.
 - Spotify: `open.spotify.com/album/7xzG1VkanSUMJDL5G7sl78`
 - Playlist YouTube: `OLAK5uy_k0IyuEHRWnUzbN8qVCVYbFkHZyaKqDQwQ`
 
@@ -71,7 +71,7 @@ Debut album. Figurou entre os 150 melhores álbuns da América Latina do ano.
 
 Injúria é uma banda de metal originária de Leme, interior de São Paulo, formada em 2018. A sonoridade parte das raízes do heavy metal dos anos 80 — Slayer, Obituary — e as atravessa com novos elementos, resultando em composições densas e diretas sobre o vazio existencial, a escuridão interior que cada um carrega consigo.
 
-O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com dez faixas.
+O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com nove faixas.
 
 Formação: Leonardo Pais (guitarra e vocal), Diego Henrique (baixo), Heraldo Habermann (bateria).
 

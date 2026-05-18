@@ -553,7 +553,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
       <div>
         <p class="t-label">2025 · Álbum · 09 faixas</p>
         <h2 class="release-title">The Moral Stain</h2>
-        <p class="release-desc" data-i18n="home.release.desc">Segundo álbum do Injúria. Dez faixas sobre o vazio existencial.</p>
+        <p class="release-desc" data-i18n="home.release.desc">Segundo álbum do Injúria. Nove faixas sobre o vazio existencial.</p>
         <div class="btn-row">
           <a class="btn btn-primary"
              href="https://open.spotify.com/album/7xzG1VkanSUMJDL5G7sl78"
@@ -653,7 +653,7 @@ Mesclar no `assets/translations.json` sob `"pt"` e `"en"`:
   "home.hero.label":       "Metal · Leme, SP",
   "home.hero.cta":         "Ouvir agora",
   "home.release.label":    "Último lançamento",
-  "home.release.desc":     "Segundo álbum do Injúria. Dez faixas sobre o vazio existencial.",
+  "home.release.desc":     "Segundo álbum do Injúria. Nove faixas sobre o vazio existencial.",
   "home.release.spotify":  "Spotify",
   "home.release.youtube":  "YouTube",
   "home.videos.label":     "Vídeos",
@@ -737,7 +737,7 @@ git commit -m "feat: home page — hero, release, videos, merch, shows and strea
       <div class="bio-block">
         <p class="bio-text t-muted" data-i18n="about.bio">Injúria é uma banda de metal originária de Leme, interior de São Paulo, formada em 2018. A sonoridade parte das raízes do heavy metal dos anos 80 — Slayer, Obituary — e as atravessa com novos elementos, resultando em composições densas e diretas sobre o vazio existencial.
 
-O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com dez faixas.</p>
+O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com nove faixas.</p>
       </div>
     </section>
 
@@ -810,7 +810,7 @@ O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da
 "pt": {
   "about.label":          "A banda",
   "about.title":          "Sobre o Injúria",
-  "about.bio":            "Injúria é uma banda de metal originária de Leme, interior de São Paulo, formada em 2018. A sonoridade parte das raízes do heavy metal dos anos 80 — Slayer, Obituary — e as atravessa com novos elementos, resultando em composições densas e diretas sobre o vazio existencial.\n\nO primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com dez faixas.",
+  "about.bio":            "Injúria é uma banda de metal originária de Leme, interior de São Paulo, formada em 2018. A sonoridade parte das raízes do heavy metal dos anos 80 — Slayer, Obituary — e as atravessa com novos elementos, resultando em composições densas e diretas sobre o vazio existencial.\n\nO primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com nove faixas.",
   "about.members.label":  "Formação",
   "about.role.guitar":    "Guitarra & Vocal",
   "about.role.bass":      "Baixo",
@@ -1019,7 +1019,7 @@ git commit -m "feat: discografia page with all 5 releases"
       <div class="bio-block">
         <p class="bio-text t-muted">Injúria é uma banda de metal originária de Leme, interior de São Paulo, formada em 2018. A sonoridade parte das raízes do heavy metal dos anos 80 — Slayer, Obituary — e as atravessa com novos elementos, resultando em composições densas e diretas sobre o vazio existencial, a escuridão interior que cada um carrega consigo.
 
-O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com dez faixas.
+O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da América Latina naquele ano. Em 2019, a End Of Times Tour percorreu 12 cidades paulistas em 15 apresentações, dividindo palco com Claustrofobia e Hellish War. Em 2025, o Injúria lançou The Moral Stain, segundo álbum com nove faixas.
 
 Formação: Leonardo Pais (guitarra e vocal), Diego Henrique (baixo), Heraldo Habermann (bateria).</p>
       </div>
