@@ -157,7 +157,7 @@ Cada item: capa, ano, título, tipo, links Spotify + YouTube.
   - Logotipo PNG (alta resolução)
   - Rider técnico (PDF)
   - Release The Moral Stain (PDF)
-- **Booking:** e-mail `contato@injuriametal.com` + WhatsApp `+55 19 99451-7235`
+- **Booking:** e-mail `leonardopais1990@gmail.com` + WhatsApp `+55 19 99451-7235`
 
 Sem formulário nessa página — contato direto por e-mail e WhatsApp.
 

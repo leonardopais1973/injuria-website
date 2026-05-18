@@ -64,7 +64,7 @@ Debut album. Figurou entre os 150 melhores álbuns da América Latina do ano.
 
 ## Contato / Booking
 
-- **E-mail:** contato@injuriametal.com
+- **E-mail:** leonardopais1990@gmail.com
 - **WhatsApp:** +55 19 99451-7235
 
 ## Bio (PT-BR)

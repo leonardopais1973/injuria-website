@@ -551,7 +551,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
     <div class="release">
       <img class="release-cover" src="/assets/images/cover-the-moral-stain.jpg" alt="The Moral Stain" loading="lazy">
       <div>
-        <p class="t-label">2025 · Álbum · 10 faixas</p>
+        <p class="t-label">2025 · Álbum · 09 faixas</p>
         <h2 class="release-title">The Moral Stain</h2>
         <p class="release-desc" data-i18n="home.release.desc">Segundo álbum do Injúria. Dez faixas sobre o vazio existencial.</p>
         <div class="btn-row">
@@ -625,7 +625,7 @@ git commit -m "feat: video embed swap — click thumbnail inlines YouTube iframe
     <p class="t-label" data-i18n="home.shows.label">Shows</p>
     <p class="t-muted" style="margin-top:8px;font-size:14px;" data-i18n="home.shows.empty">Agenda em breve — entre em contato para booking</p>
     <div class="shows-contact">
-      <a href="mailto:contato@injuriametal.com">contato@injuriametal.com</a>
+      <a href="mailto:leonardopais1990@gmail.com">leonardopais1990@gmail.com</a>
       <a href="https://wa.me/5519994517235" target="_blank" rel="noopener" data-i18n="home.shows.whatsapp">WhatsApp</a>
     </div>
   </section>
@@ -775,7 +775,7 @@ O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da
       <div class="timeline">
         <div class="timeline-item">
           <span class="timeline-year">2025</span>
-          <p class="timeline-text" data-i18n="about.tl.2025">Lançamento de The Moral Stain, segundo álbum — 10 faixas.</p>
+          <p class="timeline-text" data-i18n="about.tl.2025">Lançamento de The Moral Stain, segundo álbum — 09 faixas.</p>
         </div>
         <div class="timeline-item">
           <span class="timeline-year">2022</span>
@@ -816,7 +816,7 @@ O primeiro álbum, End Of Times (2018), figurou entre os 150 melhores álbuns da
   "about.role.bass":      "Baixo",
   "about.role.drums":     "Bateria",
   "about.timeline.label": "Trajetória",
-  "about.tl.2025":        "Lançamento de The Moral Stain, segundo álbum — 10 faixas.",
+  "about.tl.2025":        "Lançamento de The Moral Stain, segundo álbum — 09 faixas.",
   "about.tl.2022":        "Singles Asoka e Contempt.",
   "about.tl.2020":        "Single Filthy World.",
   "about.tl.2019":        "End Of Times Tour — 15 shows em 12 cidades paulistas, com Claustrofobia e Hellish War.",
@@ -884,7 +884,7 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
         <img class="disco-cover" src="/assets/images/cover-the-moral-stain.jpg" alt="The Moral Stain" loading="lazy">
         <div class="disco-info">
           <p class="disco-title">The Moral Stain</p>
-          <p class="disco-meta" data-i18n="disco.tms.meta">2025 · Álbum · 10 faixas</p>
+          <p class="disco-meta" data-i18n="disco.tms.meta">2025 · Álbum · 09 faixas</p>
         </div>
         <div class="disco-links">
           <a class="btn btn-primary" href="https://open.spotify.com/album/7xzG1VkanSUMJDL5G7sl78" target="_blank" rel="noopener">Spotify</a>
@@ -956,7 +956,7 @@ git commit -m "feat: sobre page — bio, members grid and career timeline"
 "pt": {
   "disco.label":       "Lançamentos",
   "disco.title":       "Discografia",
-  "disco.tms.meta":    "2025 · Álbum · 10 faixas",
+  "disco.tms.meta":    "2025 · Álbum · 09 faixas",
   "disco.single.2022": "2022 · Single",
   "disco.single.2020": "2020 · Single",
   "disco.eot.meta":    "2018 · Álbum · 7 faixas"
@@ -1063,7 +1063,7 @@ Line-up: Leonardo Pais (guitar & vocals), Diego Henrique (bass), Heraldo Haberma
     <section class="section-sm">
       <p class="t-label" style="margin-bottom:10px;" data-i18n="press.booking.label">Booking</p>
       <div class="booking-contacts">
-        <a href="mailto:contato@injuriametal.com">contato@injuriametal.com</a>
+        <a href="mailto:leonardopais1990@gmail.com">leonardopais1990@gmail.com</a>
         <a href="https://wa.me/5519994517235" target="_blank" rel="noopener">WhatsApp +55 19 99451-7235</a>
       </div>
     </section>
